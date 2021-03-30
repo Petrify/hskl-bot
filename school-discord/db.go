@@ -87,7 +87,6 @@ func (s *Service) getModuleCatalog(g *guild) ([]modelFinalSearchable, error) {
 
 		err := rows.Scan(&tmpID, &tmpName, &tmpAbbr, &tmpMajor)
 		if err == nil {
-			println(tmpID)
 			if tmpID != lastModel.id {
 				if lastModel.id != -1 {
 					lst = append(lst, lastModel)
