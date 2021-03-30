@@ -1,0 +1,2 @@
+- Create guilt templates and terminal templates
+- transactions should not be managed by database layer
