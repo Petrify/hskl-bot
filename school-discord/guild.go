@@ -113,7 +113,11 @@ func classTerminal(ctx context.Context, args []string, ext ...interface{}) error
 	s, g, msg := verifyGuild(ext)
 
 	return s.newTerminal(msg.Author.ID, classEditCommands(), g, termTimeout,
-		"Hallo! Ich kann dir helfen deine Vorlesungen zu konfigurieren! Ganz einfach diese Commands (ohne `!`) eingeben.\n`search <begriff>` um nach vorlesungen zu suchen\n`join <ID>` um der Volesung beizutreten\n`leave <ID>` um eine Vorlesung zu verlassen")
+		"Hallo! Ich kann dir helfen deine Prüfungen zu konfigurieren! Ganz einfach diese Commands (ohne !) eingeben.\n"+
+			"`search <begriff>` um nach Prüfungen zu suchen\n"+
+			"`join <ID>` um der Prüfung beizutreten\n"+
+			"`leave <ID>` um eine Prüfung zu verlassen\n"+
+			"`list` um eine liste deiner Prüfungen zu sehen")
 }
 
 func cmdTest(ctx context.Context, args []string, ext ...interface{}) error {
