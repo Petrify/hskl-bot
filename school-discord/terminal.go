@@ -287,7 +287,7 @@ func cmdList(ctx context.Context, args []string, ext ...interface{}) error {
 	}
 
 	if len(lst) == 0 {
-		return t.Print("Keine Prüfungen gefunden")
+		return t.Print("Du hast noch keine Prüfungen")
 	}
 	resp := strings.Builder{}
 	resp.WriteString("Deine Prüfungen:")
